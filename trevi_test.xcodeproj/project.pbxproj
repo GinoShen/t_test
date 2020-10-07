@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34C999EE252C81A9001C28C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C999ED252C81A9001C28C7 /* AppDelegate.swift */; };
+		34C999F2252C81A9001C28C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C999F1252C81A9001C28C7 /* ViewController.swift */; };
+		34C999F5252C81A9001C28C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C999F3252C81A9001C28C7 /* Main.storyboard */; };
+		34C999F7252C81AE001C28C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C999F6252C81AE001C28C7 /* Assets.xcassets */; };
+		34C999FA252C81AE001C28C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C999F8252C81AE001C28C7 /* LaunchScreen.storyboard */; };
+		34C99A05252C81AE001C28C7 /* trevi_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C99A04252C81AE001C28C7 /* trevi_testTests.swift */; };
+		34C99A10252CB6B8001C28C7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C99A0F252CB6B8001C28C7 /* GameViewController.swift */; };
+		34C99A1A252CBA08001C28C7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C99A17252CBA08001C28C7 /* Card.swift */; };
+		34C99A1B252CBA08001C28C7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C99A18252CBA08001C28C7 /* Game.swift */; };
+		34C99A1C252CBA08001C28C7 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C99A19252CBA08001C28C7 /* MyCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34C99A01252C81AE001C28C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34C999E2252C81A9001C28C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34C999E9252C81A9001C28C7;
+			remoteInfo = trevi_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34C999EA252C81A9001C28C7 /* trevi_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trevi_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C999ED252C81A9001C28C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34C999F1252C81A9001C28C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34C999F4252C81A9001C28C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34C999F6252C81AE001C28C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34C999F9252C81AE001C28C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34C999FB252C81AE001C28C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C99A00252C81AE001C28C7 /* trevi_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trevi_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C99A04252C81AE001C28C7 /* trevi_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trevi_testTests.swift; sourceTree = "<group>"; };
+		34C99A06252C81AE001C28C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C99A0F252CB6B8001C28C7 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		34C99A17252CBA08001C28C7 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		34C99A18252CBA08001C28C7 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		34C99A19252CBA08001C28C7 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34C999E7252C81A9001C28C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C999FD252C81AE001C28C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34C999E1252C81A9001C28C7 = {
+			isa = PBXGroup;
+			children = (
+				34C999EC252C81A9001C28C7 /* trevi_test */,
+				34C99A03252C81AE001C28C7 /* trevi_testTests */,
+				34C999EB252C81A9001C28C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34C999EB252C81A9001C28C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34C999EA252C81A9001C28C7 /* trevi_test.app */,
+				34C99A00252C81AE001C28C7 /* trevi_testTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34C999EC252C81A9001C28C7 /* trevi_test */ = {
+			isa = PBXGroup;
+			children = (
+				34C999ED252C81A9001C28C7 /* AppDelegate.swift */,
+				34C99A1F252D7402001C28C7 /* Model */,
+				34C99A1E252D73FD001C28C7 /* View */,
+				34C99A1D252D73EA001C28C7 /* Controller */,
+				34C999F3252C81A9001C28C7 /* Main.storyboard */,
+				34C999F6252C81AE001C28C7 /* Assets.xcassets */,
+				34C999F8252C81AE001C28C7 /* LaunchScreen.storyboard */,
+				34C999FB252C81AE001C28C7 /* Info.plist */,
+			);
+			path = trevi_test;
+			sourceTree = "<group>";
+		};
+		34C99A03252C81AE001C28C7 /* trevi_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				34C99A04252C81AE001C28C7 /* trevi_testTests.swift */,
+				34C99A06252C81AE001C28C7 /* Info.plist */,
+			);
+			path = trevi_testTests;
+			sourceTree = "<group>";
+		};
+		34C99A1D252D73EA001C28C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34C999F1252C81A9001C28C7 /* ViewController.swift */,
+				34C99A0F252CB6B8001C28C7 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34C99A1E252D73FD001C28C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34C99A19252CBA08001C28C7 /* MyCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34C99A1F252D7402001C28C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34C99A17252CBA08001C28C7 /* Card.swift */,
+				34C99A18252CBA08001C28C7 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34C999E9252C81A9001C28C7 /* trevi_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34C99A09252C81AE001C28C7 /* Build configuration list for PBXNativeTarget "trevi_test" */;
+			buildPhases = (
+				34C999E6252C81A9001C28C7 /* Sources */,
+				34C999E7252C81A9001C28C7 /* Frameworks */,
+				34C999E8252C81A9001C28C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trevi_test;
+			productName = trevi_test;
+			productReference = 34C999EA252C81A9001C28C7 /* trevi_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34C999FF252C81AE001C28C7 /* trevi_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34C99A0C252C81AE001C28C7 /* Build configuration list for PBXNativeTarget "trevi_testTests" */;
+			buildPhases = (
+				34C999FC252C81AE001C28C7 /* Sources */,
+				34C999FD252C81AE001C28C7 /* Frameworks */,
+				34C999FE252C81AE001C28C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34C99A02252C81AE001C28C7 /* PBXTargetDependency */,
+			);
+			name = trevi_testTests;
+			productName = trevi_testTests;
+			productReference = 34C99A00252C81AE001C28C7 /* trevi_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34C999E2252C81A9001C28C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Gino Shen";
+				TargetAttributes = {
+					34C999E9252C81A9001C28C7 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					34C999FF252C81AE001C28C7 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 34C999E9252C81A9001C28C7;
+					};
+				};
+			};
+			buildConfigurationList = 34C999E5252C81A9001C28C7 /* Build configuration list for PBXProject "trevi_test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34C999E1252C81A9001C28C7;
+			productRefGroup = 34C999EB252C81A9001C28C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34C999E9252C81A9001C28C7 /* trevi_test */,
+				34C999FF252C81AE001C28C7 /* trevi_testTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34C999E8252C81A9001C28C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C999FA252C81AE001C28C7 /* LaunchScreen.storyboard in Resources */,
+				34C999F7252C81AE001C28C7 /* Assets.xcassets in Resources */,
+				34C999F5252C81A9001C28C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C999FE252C81AE001C28C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34C999E6252C81A9001C28C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C999F2252C81A9001C28C7 /* ViewController.swift in Sources */,
+				34C99A1B252CBA08001C28C7 /* Game.swift in Sources */,
+				34C99A1C252CBA08001C28C7 /* MyCollectionViewCell.swift in Sources */,
+				34C99A10252CB6B8001C28C7 /* GameViewController.swift in Sources */,
+				34C999EE252C81A9001C28C7 /* AppDelegate.swift in Sources */,
+				34C99A1A252CBA08001C28C7 /* Card.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C999FC252C81AE001C28C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C99A05252C81AE001C28C7 /* trevi_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34C99A02252C81AE001C28C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34C999E9252C81A9001C28C7 /* trevi_test */;
+			targetProxy = 34C99A01252C81AE001C28C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34C999F3252C81A9001C28C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34C999F4252C81A9001C28C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34C999F8252C81AE001C28C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34C999F9252C81AE001C28C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34C99A07252C81AE001C28C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34C99A08252C81AE001C28C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34C99A0A252C81AE001C28C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = trevi_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gino.trevi-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34C99A0B252C81AE001C28C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = trevi_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gino.trevi-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34C99A0D252C81AE001C28C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = trevi_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gino.trevi-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/trevi_test.app/trevi_test";
+			};
+			name = Debug;
+		};
+		34C99A0E252C81AE001C28C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = trevi_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gino.trevi-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/trevi_test.app/trevi_test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34C999E5252C81A9001C28C7 /* Build configuration list for PBXProject "trevi_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34C99A07252C81AE001C28C7 /* Debug */,
+				34C99A08252C81AE001C28C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34C99A09252C81AE001C28C7 /* Build configuration list for PBXNativeTarget "trevi_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34C99A0A252C81AE001C28C7 /* Debug */,
+				34C99A0B252C81AE001C28C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34C99A0C252C81AE001C28C7 /* Build configuration list for PBXNativeTarget "trevi_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34C99A0D252C81AE001C28C7 /* Debug */,
+				34C99A0E252C81AE001C28C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34C999E2252C81A9001C28C7 /* Project object */;
+}
