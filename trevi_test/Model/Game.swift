@@ -12,6 +12,8 @@ struct Game {
     var rowNum: Int
     var columnNum: Int
     var cards: [Card]
+    var randonRow: Int = 0  // start from 1
+    var randonColumn: Int = 0   // start from 1
     
     init(rNum: Int, cNum: Int) {
         self.rowNum = rNum
@@ -23,8 +25,7 @@ struct Game {
         var array = Array<Card>()
         for rowIndex in 0..<rowNum {
             for columnIndex in 0..<columnNum {
-                let id = (rowIndex + 1) * (columnIndex + 1)
-                array.append(Card(isSelected: false, id: id, row: rowIndex+1, column: columnIndex+1))
+                array.append(Card(row: rowIndex+1, column: columnIndex+1))
             }
         }
         return array
@@ -45,41 +46,55 @@ struct Game {
     mutating func redrawGame()
     {
         // select new card
-        let newRow = Int.random(in: 1...self.rowNum)
-        let newColumn = Int.random(in: 1...self.columnNum)
-        print("new row \(newRow), new column \(newColumn)")
+        self.randonRow = Int.random(in: 1...self.rowNum)
+        self.randonColumn = Int.random(in: 1...self.columnNum)
+//        print("new row \(self.randonRow), new column \(self.randonColumn)")
         // clear all selected and set new card
         
-        for i in self.cards.indices {
-            if self.cards[i].row == newRow && self.cards[i].column == newColumn {
-                self.cards[i].updateSelectionStateWith(true)
-                self.cards[i].updateHightLightStateWith(true)
-            }else if self.cards[i].column == newColumn{
-                self.cards[i].updateSelectionStateWith(false)
-                self.cards[i].updateHightLightStateWith(true)
-            }else{
-                self.cards[i].updateSelectionStateWith(false)
-                self.cards[i].updateHightLightStateWith(false)
-            }
-        }
+//        for i in self.cards.indices {
+//            if self.cards[i].row == newRow && self.cards[i].column == newColumn {
+//                self.cards[i].updateSelectionStateWith(true)
+//                self.cards[i].updateHightLightStateWith(true)
+//            }else if self.cards[i].column == newColumn{
+//                self.cards[i].updateSelectionStateWith(false)
+//                self.cards[i].updateHightLightStateWith(true)
+//            }else{
+//                self.cards[i].updateSelectionStateWith(false)
+//                self.cards[i].updateHightLightStateWith(false)
+//            }
+//        }
     }
     
     mutating func cleanGame()
     {
-        for i in self.cards.indices {
-            self.cards[i].updateSelectionStateWith(false)
-            self.cards[i].updateHightLightStateWith(false)
-        }
+        self.randonColumn = 0
+        self.randonRow = 0
+//        for i in self.cards.indices {
+//            self.cards[i].updateSelectionStateWith(false)
+//            self.cards[i].updateHightLightStateWith(false)
+//        }
     }
     
-    func getHeightLightColumn() -> Int {
+    func getSelectedColumn() -> Int {
         
-        for card in self.cards {
-            if card.isHightLight{
-                return card.column - 1
-            }
-        }
-        return -1;
+//        for card in self.cards {
+//            if card.isHightLight{
+//                return card.column - 1
+//            }
+//        }
+        return self.randonColumn-1
         
     }
+    
+    func getSelectedRow() -> Int {
+        
+//        for card in self.cards {
+//            if card.isHightLight{
+//                return card.column - 1
+//            }
+//        }
+        return self.randonRow-1
+        
+    }
+
 }

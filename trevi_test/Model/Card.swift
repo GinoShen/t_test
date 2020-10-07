@@ -8,19 +8,15 @@
 
 import Foundation
 
-struct Card: Identifiable {
-    var isSelected = false
-    var isHightLight = false
-    
-    var id: Int
+struct Card {
     var row = 0
     var column = 0
     
-    mutating func updateSelectionStateWith(_ newState:Bool) {
-        self.isSelected = newState
-    }
-    mutating func updateHightLightStateWith(_ newState:Bool) {
-        self.isHightLight = newState
-    }
+//    mutating func updateSelectionStateWith(_ newState:Bool) {
+//        self.isSelected = newState
+//    }
+//    mutating func updateHightLightStateWith(_ newState:Bool) {
+//        self.isHightLight = newState
+//    }
 
 }
