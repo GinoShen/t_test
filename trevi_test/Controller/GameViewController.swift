@@ -14,6 +14,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var titleLabel: UILabel!
     let fullScreenSize :CGSize! = UIScreen.main.bounds.size
     var hightLightWindow: UIView? = nil
+    var buttonLabel :UILabel? = nil
+    var randomLabel :UILabel? = nil
     var game:Game? = nil
     var timer: Timer? = nil
     var timeLeft = 10
@@ -27,8 +29,9 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     
-    func moveWindowToColumn(column:Int) {
+    func moveWindowToNewPosition(row: Int, column:Int) {
         let cellWidth = CGFloat(fullScreenSize.width)/CGFloat(self.game!.columnNum) - 10.0
+        let cellHeight = CGFloat(fullScreenSize.height-20)/CGFloat(self.game!.rowNum+1) - 10.0
         if self.hightLightWindow == nil
         {
             self.hightLightWindow = UIView.init(frame: CGRect.init(x: CGFloat((cellWidth+10)*CGFloat(column)+5), y: 5+20, width: cellWidth, height: CGFloat(fullScreenSize.height-20) - 10.0))
@@ -37,11 +40,35 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
             self.hightLightWindow!.backgroundColor = UIColor.clear
             self.hightLightWindow!.isUserInteractionEnabled = false
             self.view.addSubview(self.hightLightWindow!)
+            
+            self.buttonLabel = UILabel.init(frame: CGRect.init(x: 0, y: CGFloat(fullScreenSize.height-20) - 10.0-cellHeight, width: cellWidth, height: cellHeight))
+            self.buttonLabel!.text = "button"
+            self.buttonLabel!.textColor = UIColor.red
+            self.buttonLabel!.backgroundColor = UIColor.yellow
+            self.buttonLabel!.textAlignment = .left
+            self.hightLightWindow!.addSubview(self.buttonLabel!)
+
+            
         }else
         {
             self.hightLightWindow!.isHidden = false
             self.hightLightWindow!.frame = CGRect.init(x: CGFloat((cellWidth+10)*CGFloat(column)+5), y: 5+20, width: cellWidth, height: CGFloat(fullScreenSize.height-20) - 10.0)
         }
+        
+        if  self.randomLabel == nil{
+            self.randomLabel = UILabel.init(frame: CGRect.init(x: 0, y: CGFloat(row)*(cellHeight+10), width: cellWidth, height: cellHeight))
+//            self.randomLabel!.sizeToFit()
+            self.randomLabel!.text = "random"
+            self.randomLabel!.adjustsFontSizeToFitWidth = true
+            self.randomLabel!.textColor = UIColor.red
+            self.randomLabel!.textAlignment = .left
+            self.hightLightWindow!.addSubview(self.randomLabel!)
+        }else{
+            self.randomLabel?.frame = CGRect.init(x: 0, y: CGFloat(row)*(cellHeight+10), width: cellWidth, height: cellHeight)
+
+        }
+        
+        
     }
     
     func setCollectionViewLayout() {
@@ -63,8 +90,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 self.titleLabel.text = "\(self.timeLeft) second(s) remain to restart a game"
             } else {
                 self.game!.redrawGame()
-                self.moveWindowToColumn(column: self.game!.getSelectedColumn())
-                self.collectionView.reloadData()
+                self.moveWindowToNewPosition(row: self.game!.getSelectedRow(), column: self.game!.getSelectedColumn())
                 self.titleLabel.text = "game set! plz press hight light \"button\" to restart a game"
                 self.timeLeft = 10
             }
@@ -110,7 +136,6 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 self.hightLightWindow!.isHidden = true
             }
 //            self.startTimer()
-            collectionView.reloadData()
         }
     }
     
